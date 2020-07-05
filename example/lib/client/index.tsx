@@ -1,8 +1,7 @@
-import { render, h } from "preact";
-import { Counter } from "../components/counter";
 import { hydrate, setup } from "otion";
+import "../injects";
+import { inject } from "sosse/preact";
 
 setup({});
 hydrate();
-
-render(<Counter />, document.querySelector("#counter"));
+inject({ logInjects: true });

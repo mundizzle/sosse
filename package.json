@@ -21,6 +21,18 @@
       "import": "./dev-socket-client/dist/main.m.js",
       "require": "./dev-socket-client/dist/main.js"
     },
+    "./react": {
+      "browser": "./react/dist/main.m.js",
+      "umd": "./react/dist/main.umd.js",
+      "import": "./react/dist/main.m.js",
+      "require": "./react/dist/main.js"
+    },
+    "./preact": {
+      "browser": "./preact/dist/main.m.js",
+      "umd": "./preact/dist/main.umd.js",
+      "import": "./preact/dist/main.m.js",
+      "require": "./preact/dist/main.js"
+    },
     "./package.json": "./package.json",
     "./": "./"
   },
@@ -52,9 +64,10 @@
     "lodash": "^4.17.15",
     "mallery": "1.0.0-alpha.7",
     "otion": "^0.3.2",
-    "preact-render-to-string": "^5.1.9",
     "preact": "^10.4.4",
+    "preact-render-to-string": "^5.1.9",
     "prettier": "^2.0.5",
+    "react": "^16.13.1",
     "sockette": "^2.0.6",
     "standard-version": "^8.0.0",
     "strip-ansi": "^6.0.0",
@@ -66,7 +79,7 @@
   },
   "dependencies": {
     "clear-module": "^4.1.1",
-    "microbundle": "developit/microbundle#js-watch-api"
+    "microbundle": "developit/microbundle"
   },
   "optionalDependencies": {
     "chokidar": "^3.4.0",
@@ -87,7 +100,10 @@
     "otion/dist",
     "dev-socket-client/package.json",
     "dev-socket-client/lib",
-    "dev-socket-client/dist"
+    "dev-socket-client/dist",
+    "react/package.json",
+    "react/lib",
+    "react/dist"
   ],
   "standard-version": {
     "scripts": {
@@ -113,7 +129,8 @@
       "example/lib/**/*.{ts,tsx,js,jsx}",
       "preact/lib/**/*.{ts,tsx,js,jsx}",
       "otion/lib/**/*.{ts,tsx,js,jsx}",
-      "dev-socket-client/lib/**/*.{ts,tsx,js,jsx}"
+      "dev-socket-client/lib/**/*.{ts,tsx,js,jsx}",
+      "react/lib/**/*.{ts,tsx,js,jsx}"
     ]
   }
 }
